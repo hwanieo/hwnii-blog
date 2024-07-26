@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import '@/app/ui/globals.css';
 
 import { nunito } from '@/app/ui/fonts';
-import Background from './ui/background';
+// import Background from './ui/background';
 import Header from './ui/header';
 
 export const metadata: Metadata = {
@@ -18,10 +18,10 @@ export default function RootLayout({
   return (
     <html lang='ko'>
       <body className={`${nunito.className} antialiased`}>
-        <Background>
-          <Header />
-          {children}
-        </Background>
+        {/* <Background> */}
+        <Header />
+        {children}
+        {/* </Background> */}
       </body>
     </html>
   );
