@@ -1,10 +1,9 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
-import Header from '@/app/ui/Header';
-import Background from './ui/Background';
+import '@/app/ui/globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+import { nunito } from '@/app/ui/fonts';
+import Background from '@/app/ui/background';
+import Header from '@/app/ui/header';
 
 export const metadata: Metadata = {
   title: 'hwnii blog',
@@ -18,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ko'>
-      <body className={inter.className}>
+      <body className={`${nunito.className} antialiased`}>
         <Background>
           <Header />
           {children}
