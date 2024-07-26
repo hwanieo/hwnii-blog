@@ -13,6 +13,7 @@ export default function Background({
         {/* 유리 효과 */}
         <div className='absolute inset-0 bg-slate-900 bg-opacity-0 backdrop-filter backdrop-blur-lg'></div>
       </div>
+
       {/* 콘텐츠 */}
       {children}
     </main>
