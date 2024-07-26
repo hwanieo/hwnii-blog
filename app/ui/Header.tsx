@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className='bg-stone-300 flex items-center justify-between w-[90%] mx-auto mt-4 px-10 py-4 rounded-full fixed left-1/2 md:w-[75%] transform -translate-x-1/2 tracking-tight'>
+    <header className='bg-blue-500/15 backdrop-filter border border-blue-500/5 backdrop-blur-sm z-20 flex items-center justify-between w-[90%] mx-auto mt-4 px-10 py-4 rounded-full fixed left-1/2 md:w-[75%] transform -translate-x-1/2 tracking-tight'>
       <Link href={'#'} className='flex gap-4 text-center items-center'>
         <span className='flex items-center justify-center bg-black w-10 h-10 rounded-lg text-2xl text-white m-auto'>
           H
