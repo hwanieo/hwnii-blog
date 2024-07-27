@@ -24,7 +24,7 @@ export default function BlogPage() {
                       </p>
                     </div>
                   </div>
-                  <div className='bg-blue-500 my-2 relative w-[100%] h-60 rounded-md overflow-hidden'>
+                  <div className='my-2 relative w-[100%] h-60 rounded-md overflow-hidden'>
                     <Image
                       src={article.imgUrl}
                       alt='에라잇'
