@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import NavLinks from '@/app/ui/nav-links';
-import Hamburger from '@/app/ui/hamburger';
+import NavLinks from '@/components/nav-links';
+import Hamburger from '@/components/hamburger';
 
 export default function Header() {
   return (

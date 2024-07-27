@@ -1,4 +1,4 @@
-import SideNav from '@/app/ui/side-nav';
+import SideNav from '@/components/side-nav';
 import Image from 'next/image';
 import Link from 'next/link';
 
