@@ -1,9 +1,20 @@
-export default function Hamburger() {
+'use client';
+
+interface HamburgerProps {
+  onClick: () => void;
+}
+
+export default function Hamburger({ onClick }: HamburgerProps) {
   return (
-    <div className='w-8 h-8 flex flex-col justify-around md:hidden cursor-pointer'>
-      <div className='bg-black p-[0.2rem] rounded-full'></div>
-      <div className='bg-black p-[0.2rem] rounded-full'></div>
-      <div className='bg-black p-[0.2rem] rounded-full'></div>
-    </div>
+    <>
+      <button
+        onClick={onClick}
+        className='w-8 h-8 flex flex-col justify-around md:hidden cursor-pointer'
+      >
+        <span className='inline-block w-full bg-black p-[0.2rem] rounded-full' />
+        <span className='inline-block w-full bg-black p-[0.2rem] rounded-full' />
+        <span className='inline-block w-full bg-black p-[0.2rem] rounded-full' />
+      </button>
+    </>
   );
 }
