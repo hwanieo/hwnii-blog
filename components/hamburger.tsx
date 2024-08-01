@@ -1,10 +1,12 @@
 'use client';
 
+import { memo } from 'react';
+
 interface HamburgerProps {
   onClick: () => void;
 }
 
-export default function Hamburger({ onClick }: HamburgerProps) {
+const Hamburger = memo(function Hamburger({ onClick }: HamburgerProps) {
   return (
     <>
       <button
@@ -17,4 +19,6 @@ export default function Hamburger({ onClick }: HamburgerProps) {
       </button>
     </>
   );
-}
+});
+
+export default Hamburger;

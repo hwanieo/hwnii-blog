@@ -6,16 +6,17 @@ import { usePathname } from 'next/navigation';
 import { memo } from 'react';
 
 const links = [
+  { name: 'Home', href: '/', icon: null },
   { name: 'Blog', href: '/blog', icon: null },
   { name: 'Portfolio', href: '/portfolio', icon: null },
-  { name: 'Contacts', href: '/contacts', icon: null },
 ];
 
 interface NavLinksProps {
   onClick?: () => void;
 }
 
-const NavLinks = memo(function NavLinks({ onClick }: NavLinksProps) {
+// const NavLinks = memo(
+function NavLinks({ onClick }: NavLinksProps) {
   const pathname = usePathname();
 
   return (
@@ -27,7 +28,7 @@ const NavLinks = memo(function NavLinks({ onClick }: NavLinksProps) {
             href={link.href}
             onClick={onClick}
             className={clsx(
-              'w-full px-3 py-2 tracking-wide transition-all hover:bg-black hover:text-white rounded-md',
+              'w-full px-3 py-3 md:py-1 tracking-wide transition-all hover:bg-black hover:text-white rounded-md',
               {
                 'bg-black text-white': pathname === link.href,
               }
@@ -39,6 +40,7 @@ const NavLinks = memo(function NavLinks({ onClick }: NavLinksProps) {
       })}
     </>
   );
-});
+}
+// );
 
 export default NavLinks;

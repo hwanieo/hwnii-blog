@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function BlogPage() {
   return (
-    <div className='pt-28 w-full relative z-10 md:w-[70%] mx-auto'>
+    <div className='pt-28 w-full relative z-10 md:w-[60%] mx-auto'>
       <div className='flex gap-5 flex-col md:flex-row'>
         <SideNav />
 
@@ -12,7 +12,7 @@ export default function BlogPage() {
           {articles.map((article) => {
             return (
               <Link key={article.id} href='#'>
-                <li className='flex justify-between flex-col-reverse border border-slate-400/25 px-3 py-1 rounded-md hover:bg-slate-300/50 hover:border-slate-200/10 transition-all sm:flex-col-reverse md:flex-col-reverse xl:flex-row'>
+                <li className='flex justify-between flex-col-reverse border bg-slate-300/50 border-slate-200/10 backdrop-filter backdrop-blur-sm hover:bg-slate-300/80 hover:shadow-lg  px-3 py-1 rounded-md  transition-all sm:flex-col-reverse md:flex-col-reverse xl:flex-row'>
                   <div className='w-full sm:w-full'>
                     <span className='inline-block text-sm py-2'>
                       {article.date}
