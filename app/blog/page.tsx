@@ -12,7 +12,7 @@ export default function BlogPage() {
           {articles.map((article) => {
             return (
               <Link key={article.id} href='#'>
-                <li className='flex justify-between flex-col-reverse border bg-slate-300/50 border-slate-200/10 backdrop-filter backdrop-blur-sm hover:bg-slate-300/80 hover:shadow-lg  px-3 py-1 rounded-md  transition-all sm:flex-col-reverse md:flex-col-reverse xl:flex-row'>
+                <li className='flex justify-between flex-col-reverse border bg-slate-300/50 border-slate-200/10 backdrop-filter backdrop-blur-sm hover:bg-slate-900/90 hover:shadow-lg  px-3 py-1 rounded-md  transition-all sm:flex-col-reverse md:flex-col-reverse xl:flex-row'>
                   <div className='w-full sm:w-full'>
                     <span className='inline-block text-sm py-2'>
                       {article.date}

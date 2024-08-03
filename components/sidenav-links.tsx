@@ -20,7 +20,7 @@ export default function SideNavLinks() {
             key={link.name}
             href='#'
             className={clsx(
-              'block whitespace-nowrap bg-white border-white/5 rounded-md hover:bg-white/60'
+              'block whitespace-nowrap bg-black border-white/5 rounded-md hover:bg-black/60'
             )}
           >
             <li className='px-2 py-2 text-sm'>
