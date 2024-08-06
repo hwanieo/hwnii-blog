@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import SideNavLinks from './sidenav-links';
+import NavbarLinks from './category-links';
 
-export default function SideNav() {
+export default function Category() {
   return (
-    <aside className='bg-slate-300/50 border-slate-200/10 w-[90%] mx-auto backdrop-filter border rounded-lg px-5 py-2 tracking-tight md:w-52 md:h-[50rem] md:mx-0'>
+    <nav className='bg-slate-300/25 border-slate-200/10 w-[90%] md:w-full mx-auto backdrop-filter border rounded-sm px-5 py-2 tracking-tight'>
       <div className='flex flex-col justify-between h-full md:justify-start'>
         <div className='flex justify-between items-center my-5'>
           <h2 className='font-bold text-xl'>
@@ -17,11 +17,11 @@ export default function SideNav() {
           </Link>
         </div>
         <div className='font-semibold overflow-x-scroll overflow-y-hidden flex gap-1 md:flex-col md:overflow-x-hidden md:overflow-y-scroll scrollbar-hide pb-2'>
-          <ul className='flex gap-2 md:flex-col'>
-            <SideNavLinks />
+          <ul className='flex justify-center flex-wrap gap-2'>
+            <NavbarLinks />
           </ul>
         </div>
       </div>
-    </aside>
+    </nav>
   );
 }

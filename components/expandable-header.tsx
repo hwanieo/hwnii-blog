@@ -1,7 +1,7 @@
 'use client';
 
 import Hamburger from './hamburger';
-import NavLinks from './nav-links';
+import NavLinks from './header-links';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import Logo from './logo';
 

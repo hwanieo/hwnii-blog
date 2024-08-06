@@ -3,7 +3,6 @@
 import clsx from 'clsx';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { memo } from 'react';
 
 const links = [
   { name: 'Home', href: '/', icon: null },
@@ -16,7 +15,7 @@ interface NavLinksProps {
 }
 
 // const NavLinks = memo(
-function NavLinks({ onClick }: NavLinksProps) {
+export default function HeaderLinks({ onClick }: NavLinksProps) {
   const pathname = usePathname();
 
   return (
@@ -28,13 +27,13 @@ function NavLinks({ onClick }: NavLinksProps) {
             href={link.href}
             onClick={onClick}
             className={clsx(
-              'w-full px-3 py-3 md:py-1 tracking-wide transition-all hover:bg-black hover:text-white rounded-md',
+              'w-full px-3 py-1 md:py-1 tracking-wide transition-all hover:bg-black hover:text-white rounded-md',
               {
                 'bg-black text-white': pathname === link.href,
               }
             )}
           >
-            <li>{link.name}</li>
+            <li className='py-1'>{link.name}</li>
           </Link>
         );
       })}
@@ -42,5 +41,3 @@ function NavLinks({ onClick }: NavLinksProps) {
   );
 }
 // );
-
-export default NavLinks;

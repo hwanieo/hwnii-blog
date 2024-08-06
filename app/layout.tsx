@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import '@/app/ui/globals.css';
 
 import { nunito } from '@/app/ui/fonts';
-import Background from '@/components/background';
 import Header from '@/components/header';
+import Background from '@/components/background';
 
 export const metadata: Metadata = {
   title: 'hwnii blog',

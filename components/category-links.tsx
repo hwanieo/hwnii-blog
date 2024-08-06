@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import Link from 'next/link';
 
 const links = [
@@ -11,7 +10,7 @@ const links = [
   { name: 'NestJS', posts: 0 },
 ];
 
-export default function SideNavLinks() {
+export default function CategoryLinks() {
   return (
     <>
       {links.map((link) => {
@@ -19,9 +18,7 @@ export default function SideNavLinks() {
           <Link
             key={link.name}
             href='#'
-            className={clsx(
-              'block whitespace-nowrap bg-black border-white/5 rounded-md hover:bg-black/60'
-            )}
+            className='hover:underline underline-offset-4'
           >
             <li className='px-2 py-2 text-sm'>
               {link.name} ({link.posts})
